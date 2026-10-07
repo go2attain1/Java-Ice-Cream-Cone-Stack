@@ -18,11 +18,12 @@ Scoops are pushed onto and popped from the top of the stack, so the last scoop
 added is the first one eaten. The cone also tracks a `numScoops` counter that is
 updated on every add and eat.
 
+```java
 addScoop("chocolate") -> [chocolate]
 addScoop("vanilla") -> [chocolate, vanilla]
 currentScoop() -> "vanilla"
 eatScoop() -> "vanilla" // cone is now [chocolate]
-
+```
 
 ## Exceptions
 
